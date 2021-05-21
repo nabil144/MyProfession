@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="20dp"
+        android:background="#8A2BE2">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/img_user"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"/>
+
+        <TextView
+            android:id="@+id/fullname_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nabil Dagher fullname"
+            android:textSize="22sp"
+            android:fontFamily="@font/antic"
+            android:layout_toRightOf="@+id/profile_image"
+            android:layout_centerVertical="true"
+            android:includeFontPadding="false"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/username_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nbz username"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/profile_image"
+            android:layout_below="@+id/fullname_field"
+            android:includeFontPadding="false"
+            android:layout_marginLeft="10dp"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        //fullname
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:layout_marginBottom="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="10dp"
+                android:background="@color/white"
+                android:text="nabilddd"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        //username
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:hint="Username"-->
+        <!--            android:layout_marginBottom="5dp">-->
+
+        <!--            <com.google.android.material.textfield.TextInputEditText-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:drawableLeft="@drawable/user"-->
+        <!--                android:drawablePadding="10dp"-->
+        <!--                android:background="@color/white"-->
+        <!--                android:text="some username"/>-->
+
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+        //phone
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phone_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone No"
+            android:layout_marginBottom="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/telephone"
+                android:drawablePadding="10dp"
+                android:background="@color/white"
+                android:text="1234"
+                android:inputType="number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        //desc
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:layout_marginBottom="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/information"
+                android:drawablePadding="10dp"
+                android:background="@color/white"
+                android:text="nabilddd"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        //desc
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:layout_marginBottom="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/placeholder"
+                android:drawablePadding="10dp"
+                android:background="@color/white"
+                android:text="dekwen"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        //email
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_marginBottom="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/envelope"
+                android:drawablePadding="10dp"
+                android:background="@color/white"
+                android:inputType="textEmailAddress"
+                android:text="eamil.com"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        //pass
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/password"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Password"-->
+<!--            android:layout_marginBottom="5dp">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:drawableLeft="@drawable/key"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:background="@color/white"-->
+<!--                android:text="mypassword"/>-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:onClick="OpenEmail"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/antic"
+            tools:ignore="OnClick" />
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="call"
+            android:onClick="OpenCall"
+            android:fontFamily="@font/antic"
+            tools:ignore="OnClick" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
